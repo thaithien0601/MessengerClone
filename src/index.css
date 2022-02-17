@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navlink {
+  @apply ml-4
+  text-lg
+  font-semibold
+  hover:underline underline-offset-8 decoration-blue-600 decoration-2;
+}
+
+.bg-linear {
+  background-image: linear-gradient(
+    83.84deg,
+    #0088ff -6.87%,
+    #a033ff 26.54%,
+    #ff5c87 58.58%
+  );
+}
+.container::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  background: linear-gradient(
+    #ff8fb2 0%,
+    #a797ff 50%,
+    #00e5ff 100%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.shadow{
+  box-shadow: 0 12px 28px 0 rgba(0,0,0,0.2),
+  0 2px 4px 0 rgba(0,0,0,0.1),
+  inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+
+.message-line:hover .reaction-icon {
+  visibility: visible;
+}
+
